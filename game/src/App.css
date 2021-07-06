@@ -1,6 +1,9 @@
 *{
   margin: 0;
-  padding: 0;
+  padding: 0;}
+  body{
+    background-color: #358597;
+    
 }
 
 .App{
@@ -13,13 +16,21 @@ display: flex;
   align-items: center;
 }
 
+h1{
+  margin: 55px;
+}
+
 .board{
   width: 400px;
   height: 400px;
-  background-color: cornflowerblue;
-  border: 1.5px solid black;
+  background-color:cadetblue;
+ border: 2px solid black;
   display: flex;
   flex-direction: column;
+  border-right: 4px solid black;
+  border-left: 4px solid black;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
 }
 .row{
   flex:33%;
@@ -30,7 +41,7 @@ display: flex;
 .square{
   flex:33%;
   height: 100%;
-  border: 1.5px solid black;
+  border: 2px solid black;
   display: grid;
   place-items: center;
  font-size: 30px;
@@ -38,5 +49,4 @@ display: flex;
  cursor: pointer;
 }
 .square:active{
-background-color: darkcyan;
-}
+background-color:cornflowerblue;}
